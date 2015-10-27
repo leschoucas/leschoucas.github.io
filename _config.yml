@@ -1,6 +1,6 @@
 # Site settings
-title:
-email:
+title: Mon appartement en location à l'Alpe d'Huez
+email: infos@leschoucas.tk
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
