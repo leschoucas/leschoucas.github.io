@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>{{site.title}}}</title>
+    <title>{{site.title}}</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -36,7 +36,7 @@
 {% assign posts=site.pages | where:"alternate", page.alternate %}
 {% for post in posts %}
   {% if post.lang != page.lang %}
-    <link rel="alternate" hreflang="{{post.lang}}" href="{{post.url}}" {{post.name}} />
+    <link rel="alternate" hreflang="{{post.lang}}" href="{{post.url}}" />
   {% endif %}
 {% endfor %}
 
