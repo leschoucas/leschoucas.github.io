@@ -26,6 +26,13 @@
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
                 </li>
+                <li>
+                    {% if page.lang == "fr" %}
+                    <a href="#lang"><span class="flag-icon flag-icon-gb"></span></a>
+                    {% else %}
+                    <a href="#lang"><span class="flag-icon flag-icon-fr"></span></a>
+                    {% endif %}
+                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
