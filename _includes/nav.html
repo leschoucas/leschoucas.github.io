@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">Résidence Les Choucas</a>
+            <a class="navbar-brand page-scroll" href="#page-top">SCI Friends & Family</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -26,13 +26,20 @@
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
                 </li>
+{% assign posts=site.pages | where:"alternate", page.alternate  "%}
+{% for post in posts %}
+    {% if post.lang != page.lang and post.lang != 'x-default' %}
+                {% if post.lang == "en" %}
                 <li>
-                    {% if page.lang == "fr" %}
-                    <a href="#lang"><span class="flag-icon flag-icon-gb"></span></a>
-                    {% else %}
-                    <a href="#lang"><span class="flag-icon flag-icon-fr"></span></a>
-                    {% endif %}
+                    <a href="{{post.url}}"><span class="flag-icon flag-icon-gb"></span></a>
                 </li>
+                {% else if post.lang == "fr" %}
+                <li>
+                    <a href="{{post.url}}"><span class="flag-icon flag-icon-fr"></span></a>
+                </li>
+                {% endif %}
+    {% endif %}
+{% endfor %}
             </ul>
         </div>
         <!-- /.navbar-collapse -->

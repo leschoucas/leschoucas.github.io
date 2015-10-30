@@ -33,4 +33,11 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+{% assign posts=site.pages | where:"alternate", page.alternate %}
+{% for post in posts %}
+  {% if post.lang != page.lang %}
+    <link rel="alternate" hreflang="{{post.lang}}" href="{{post.url}}" {{post.name}} />
+  {% endif %}
+{% endfor %}
+
 </head>
