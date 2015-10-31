@@ -14,8 +14,10 @@
     <meta property="og:type"                content="website" />
     <meta property="og:title"               content="{{page.t.title}}" />
     <meta property="og:description"         content="{{site.data.t[page.lang].description}}" />
+    {% if page.lang and page.lang := 'x-default' %}
     <meta property="og:locale"              content="{% if page.lang == 'fr' %}fr_FR{% else %}en_GB{% endif %}" /> 
-    <meta property="og:image"               content="{{site.url}}{{site.baseurl}}img/header.jpg" />    
+    {% endif %}
+    <meta property="og:image"               content="{{site.url}}{{site.baseurl}}img/inside_hdr" />    
 
     <!-- fb admins -->
     <meta property="fb:admins" content="{{site.fb_admin}}" />
