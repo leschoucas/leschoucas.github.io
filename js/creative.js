@@ -46,15 +46,13 @@
     new WOW().init();
 
     // FB Stuff
-    /*
     $("#choucas-fb-share").click(function(e){
         e.preventDefault();
         FB.ui({
           method: 'share',
-          href: 'https://developers.facebook.com/docs/',
+          href: $('meta[property=\'og:url\']').attr('content'),
         }, function(response){});
 
     })
-    */
 
 })(jQuery); // End of use strict
