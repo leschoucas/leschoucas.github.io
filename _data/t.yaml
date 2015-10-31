@@ -1,0 +1,22 @@
+en:
+  about: About
+  title: My next rental in Alpe d'Huez
+  description: > # this means to ignore newlines until "baseurl:"
+    Au pied des pistes et des remontées mécaniques, appartement familial de 50m2, 2 pièces de tout équipé est exposé plein sud.
+    Prix promo sur certaines semaines.
+
+fr:
+  about: A propos
+  title: Mon appartement en location à l'Alpe d'Huez
+  more: En savoir plus
+  description: > # this means to ignore newlines until "baseurl:"
+    Au pied des pistes et des remontées mécaniques, appartement familial de 50m2, 2 pièces de tout équipé est exposé plein sud.
+    Prix promo sur certaines semaines.
+
+x-default:
+  about: A propos
+  title: Mon appartement en location à l'Alpe d'Huez
+  more: En savoir plus
+  description: > # this means to ignore newlines until "baseurl:"
+    Au pied des pistes et des remontées mécaniques, appartement familial de 50m2, 2 pièces de tout équipé est exposé plein sud.
+    Prix promo sur certaines semaines.
