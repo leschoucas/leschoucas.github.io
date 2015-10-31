@@ -2,8 +2,12 @@
 title: Mon appartement en location à l'Alpe d'Huez
 email: infos@leschoucas.tk
 description: > # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+  Au pied des pistes et des remontées mécaniques, appartement familial de 50m2, 2 pièces de tout équipé est exposé plein sud.
+  Prix promo sur certaines semaines.
+baseurl: "/" # the subpath of your site, e.g. /blog/
+url: "http://bd.ext.phileog.com" # the base hostname & protocol for your site
+fb_app_id: 296906373346 # Les Choucas
+fb_admin: 640592901 # Benjamin
 
 twitter_username:
 github_username:

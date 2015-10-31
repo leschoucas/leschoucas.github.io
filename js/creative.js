@@ -45,4 +45,16 @@
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
+    // FB Stuff
+    /*
+    $("#choucas-fb-share").click(function(e){
+        e.preventDefault();
+        FB.ui({
+          method: 'share',
+          href: 'https://developers.facebook.com/docs/',
+        }, function(response){});
+
+    })
+    */
+
 })(jQuery); // End of use strict

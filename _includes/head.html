@@ -3,10 +3,23 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="{{site.description}}">
     <meta name="author" content="">
 
     <title>{{site.title}}</title>
+
+    <!-- facebook og -->
+    <meta property="og:site_name"           content="{{site.title}}"/>
+    <meta property="og:url"                 content="{{site.url}}{{page.url}}" />
+    <meta property="og:type"                content="website" />
+    <meta property="og:title"               content="{{site.title}}" />
+    <meta property="og:description"         content="{{site.description}}" />
+    <meta property="og:locale"              content="{% if page.lang == 'fr' %}fr_FR{% else %}en_GB{% endif %}" /> 
+    <meta property="og:image"               content="{{site.url}}{{site.baseurl}}img/header.jpg" />    
+
+    <!-- fb admins -->
+    <meta property="fb:admins" content="{{site.fb_admin}}" />
+    <meta property="fb:app_id" content="{{site.fb_app_id}}" />
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -37,6 +50,7 @@
 {% for post in posts %}
   {% if post.lang != page.lang %}
     <link rel="alternate" hreflang="{{post.lang}}" href="{{post.url}}" />
+    <!-- meta property="og:locale:alternate"    content="{{post.lang}}" / -->
   {% endif %}
 {% endfor %}
 
