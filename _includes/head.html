@@ -67,7 +67,7 @@
 {% assign posts=site.pages | where:"alternate", page.alternate %}
 {% for post in posts %}
   {% if post.lang != page.lang %}
-    <link rel="alternate" hreflang="{{post.lang}}" href="{{post.url}}" />
+    <link rel="alternate" hreflang="{{post.lang}}" href="{{post.url | replace:'index.html',''}}" />
     <!-- meta property="og:locale:alternate"    content="{{post.lang}}" / -->
   {% endif %}
 {% endfor %}

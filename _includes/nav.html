@@ -31,11 +31,11 @@
     {% if post.lang != page.lang and post.lang != 'x-default' %}
                 {% if post.lang == "en" %}
                 <li>
-                    <a href="{{post.url}}"><span class="flag-icon flag-icon-gb"></span></a>
+                    <a href="{{post.url | replace:'index.html',''}}"><span class="flag-icon flag-icon-gb"></span></a>
                 </li>
                 {% else if post.lang == "fr" %}
                 <li>
-                    <a href="{{post.url}}"><span class="flag-icon flag-icon-fr"></span></a>
+                    <a href="{{post.url | replace:'index.html',''}}"><span class="flag-icon flag-icon-fr"></span></a>
                 </li>
                 {% endif %}
     {% endif %}
