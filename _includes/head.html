@@ -24,7 +24,8 @@
     <meta property="fb:app_id" content="{{site.fb_app_id}}" />
 
     <!-- google stuff -->
-    <link href="https://plus.google.com/104924682293142745985" rel="publisher" />
+    <link href="https://plus.google.com/104924682293142745985" rel="publisher" /> <!-- https://goo.gl/oZoGMI
+ -->
     <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -56,6 +57,10 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css" type="text/css">
+
+    {% if page.layout == 'page' %}
+    <link rel="stylesheet" href="/css/page.css" type="text/css">
+    {% endif %}
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
